@@ -4,7 +4,7 @@ read -p "OPTIONS:  Add = add new IPs. Run = run ping test with current IPs. " EN
 while [[ $ENTRYQUESTION == "Run" || $ENTRYQUESTION == "run" ]]; do 
 	        while IFS= read -r ip 
 		do		
-		cwssh tech_ssh tech@$ip 
+		ssh tech_ssh tech@$ip 
 		read -p "Checking GPUs.... (Press enter) 'cd /home/acc/share/ && bash ./GPU_CLIENT_CHECK'" 
 		#	if [ $GPU_COUNT -ge '7' ] # is greater than or equal to if 
 		#	then
