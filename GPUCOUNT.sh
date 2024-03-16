@@ -31,6 +31,4 @@ cwssh $ip "ifconfig; exit"
 esac 
 
 done
- #10.111.3.5
- #10.111.3.4
- #10.111.1.22  
+
