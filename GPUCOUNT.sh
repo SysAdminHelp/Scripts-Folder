@@ -25,7 +25,7 @@ ping -w 3 $ip
 ;;
 
 EthernetConfig)
-cwssh $ip "ifconfig; exit"
+ssh $ip "ifconfig; exit"
 
 
 esac 
