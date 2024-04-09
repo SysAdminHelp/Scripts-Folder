@@ -9,15 +9,15 @@ read -p "Operation": op
 case $op in 
 
 restart) 
-cwssh $ip "sudo safe-reboot"
+ssh $ip "sudo safe-reboot"
 ;;
 
 gpucheck)
-cwssh $ip "/home/acc/share/GPU_CLIENT_CHECK; exit"
+ssh $ip "/home/acc/share/GPU_CLIENT_CHECK; exit"
 ;;
 
 storagecheck)
-cwssh $ip "lsblk; exit"
+ssh $ip "lsblk; exit"
 ;;
 
 pingtest)
